@@ -5,41 +5,17 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <Navigation />
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <h2>P211012610 21新闻3 龙壮飞</h2>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Footer />
-    </ul>
-  </main>
-</Layout>
+<Layout title="欢迎来到AStro" <main>
+  <Navigation />
+  <h1>课堂笔记</h1>
+  <h2>Astro的安装及部署</h2>
+  <p>在这个页面，我将展示有关我的网络编辑课堂笔记</p>
+  <ul>
+    <li><a href="md/1.md">Astro的安装及部署</a></li>
+    <li><a href="md 2.md">在Astro中创建页面及导航链接</a></li>
+  </ul>
+  <Footer />
+</Layout>; ---
 
 <style>
   main {
@@ -61,8 +37,25 @@ import Footer from "../components/Footer.astro";
     z-index: -1;
   }
   h1 {
+    color: aliceblue;
     font-size: 4rem;
     font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  p {
+    color: rgb(250, 251, 252);
+    font-size: 1rem;
+    font-weight: 200;
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
@@ -100,5 +93,15 @@ import Footer from "../components/Footer.astro";
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
+  }
+  ul{
+    color: rgb(250, 251, 252);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
   }
 </style>
