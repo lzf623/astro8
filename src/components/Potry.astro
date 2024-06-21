@@ -1,0 +1,39 @@
+---
+const { imgsrc, potry, potrytitle, Pubtime, auther } = Astro.props;
+---
+
+<div>
+  <img src={imgsrc} alt={potry} />
+  <h2>{potry}</h2>
+  <p>
+    <span class="potry title">{potrytitle}</span> | <span class="auther"
+      >{auther}</span
+    >
+    <p class="pubtime">{Pubtime}</p>
+  </p>
+</div>
+
+<style>
+  div {
+    border: 1px rgb(199, 199, 172) solid;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5em;
+  }
+  img {
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+  .Pubtime {
+    font-size: 12px;
+    color: rgb(176, 177, 177);
+  }
+  span {
+    padding: 0.5em;
+  }
+</style>
