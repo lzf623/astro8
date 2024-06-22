@@ -1,0 +1,44 @@
+---
+import Dht from "../components/Dht.astro";
+const { frontmatter, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>{frontmatter.title}</title>
+  </head>
+</html>
+
+<body>
+  <head> <Dht /></head>
+  <main>
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.abstract}</p>
+    <slot />
+  </main>
+  <footer>
+    <hr />
+    <p><span> https://github.com/lzf623/astro8/</span> <span>2024</span></p>
+  </footer>
+</body>
+<style>
+  body {
+    margin: 0;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main {
+    width: 800px;
+    margin: 1em auto;
+  }
+  footer {
+    text-align: center;
+  }
+</style>
