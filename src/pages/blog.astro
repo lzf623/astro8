@@ -8,34 +8,47 @@ import Footer from "../components/Footer.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <Navigation />
-    <h1>儿童必须掌握的安全知识</h1>
+    <h1>国家求职网站</h1>
+    <h3>央企聚集地</h3>
     <p>
-      在这个页面，我将展示有关儿童安全常识的信息
-      让我们共同携手，为孩子的安全成长保驾护航！
+      在这个页面，我将展示国企央企和地区性的省级招聘网站，靠谱又有用，为你的求职安全保驾护航！
     </p>
 
-    <h2>校园恐怖袭击类型及应对措施</h2>
+    <li><a href="https://124365.smartedu.cn/"> 国家大学生就业服务平台</a></li>
+    <li><a href="https://www.newjobs.com.cn/"> 中国国家人才网</a></li>
+    <li><a href="http://chinajob.mohrss.gov.cn/ "> 中国就业网</a></li>
+    <li><a href="http://Www.hxrc.com/"> 中国海峡人才网 </a></li>
+    <li><a href="http://Www.chinahrd.net/"> 中国人力资源开发网</a></li>
     <li>
-      沉着冷静最重要。服从命令，趴在地上，别与歹徒对视或者对话，以免发生语言和行为冲突。
+      <a href="http://Www.gaoxiaojob.com/ "> 高校人才网(找高校工作看这里)</a>
     </li>
     <li>
-      尽量保住自己的手机，适时发出求救信息。最后，要随机应变，如果特警发出突袭，要尽量趴在地上，配合解救。
+      <a href="https://m12333.cn/platform "
+        >人社通(全国各地人力资源和社会保障网汇总</a
+      >
     </li>
-    <a href="http://fssyjglj.foshan.gov.cn/img/0/400/400499/5214901.png">
-      点击这里访问网站</a
-    >
+    <li><a href="http://Www.cpta.com.cn "> 中国人事考试网</a></li>
+
     <Footer />
   </main>
 </Layout>
 
 <style>
+  body {
+    margin: 2em;
+    background-image: url("https://img2.baidu.com/it/u=2886979054,4154616998&fm=253&fmt=auto&app=138&f=JPEG?w=714&h=260");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: rgb(220, 228, 234);
+  }
   main {
     margin: auto;
-    padding: 1rem;
-    width: 800px;
+    padding: 3rem;
+    width: 900px;
     max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
+    color: rgb(94, 84, 69);
+    font-size: 36px;
     line-height: 1.6;
   }
   .astro-a {
@@ -43,16 +56,18 @@ import Footer from "../components/Footer.astro";
     top: -32px;
     left: 50%;
     transform: translatex(-50%);
-    width: 220px;
+    width: 230px;
     height: auto;
     z-index: -1;
   }
   h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 0.1;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    color: #805d42;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
@@ -68,8 +83,8 @@ import Footer from "../components/Footer.astro";
       rgba(var(--accent-dark), 66%),
       rgba(var(--accent-dark), 33%)
     );
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 10px;
   }
   .instructions code {
     font-size: 0.8em;
@@ -86,6 +101,14 @@ import Footer from "../components/Footer.astro";
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
-    padding: 0;
+    padding: 2;
+  }
+  li {
+    font-size: 39px;
+    color: #4b3c3c;
+  }
+  footer {
+    color: rgb(251, 248, 248);
+    text-align: left;
   }
 </style>

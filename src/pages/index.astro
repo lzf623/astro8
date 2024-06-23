@@ -3,38 +3,40 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import Potry from "../components/Potry.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="找公告">
   <main>
-    <Navigation />
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <h2>P211012610 21新闻3 龙壮飞</h2>
+    <div>
+      <Navigation />
+    </div>
+    <h1>欢迎你!应届生</h1>
+
     <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+      点击下面部分,你可以查看不同省份考公考编的公告. <br />
     </p>
     <ul role="list" class="link-card-grid">
       <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
+        href=" /md/4/"
+        title="省考"
+        body="各省的公务员考试,是由中央组织部,人力资源和社会保障部组织的,招录对象主要是中央机关及其直属机构的公务员"
+      />
+
+      <Card
+        href="/md/5/"
+        title="军队文职"
+        body="军队文职人员，全称“中国人民解放军文职人员 ”，指在军民通用、非直接参与作战，且社会化保障不宜承担的军队编制岗位，从事管理工作和专业技术工作的非现役人员，是军队人员的组成部分。"
       />
       <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
+        href="/md/6/"
+        title="事业单位"
+        body="事业单位是指由国家为了社会公益目的，通过国家机关举办或其他组织利用国有资产所举办的社会服务组织。"
       />
       <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
+        href="/md/7/"
+        title="选调生"
+        body="选调生(选调优秀大学毕业生)是各省党委组织部门有计划地从高等院校选调品学兼优的应届大学本科及其以上毕业生到基层工作，作为党政领导干部后备人选和县级以上党政机关高素质的工作人员人选进行重点培养群体的简称。 "
       />
       <Footer />
     </ul>
@@ -42,31 +44,43 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
+  body {
+    margin: 2em;
+    background-image: url("https://img2.baidu.com/it/u=280616070,926264360&fm=253&fmt=auto&app=138&f=JPEG?w=239&h=415");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: rgb(237, 240, 243);
+  }
+  div {
+    border: 2px rgb(238, 233, 212) solid;
+    width: 700px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1em;
+  }
   main {
     margin: auto;
-    padding: 1rem;
-    width: 800px;
+    padding: 1em;
+    width: 1000px;
+    height: 2500px;
     max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
+    color: rgb(253, 251, 251);
+    font-size: 36px;
+    line-height: 2;
+    text-align: left;
   }
   .astro-a {
     position: absolute;
-    top: -32px;
+    top: 32px;
     left: 50%;
     transform: translatex(-50%);
     width: 220px;
     height: auto;
     z-index: -1;
   }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -75,22 +89,22 @@ import Footer from "../components/Footer.astro";
     background-position: 0%;
   }
   .instructions {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     border: 1px solid rgba(var(--accent-light), 25%);
     background: linear-gradient(
       rgba(var(--accent-dark), 66%),
       rgba(var(--accent-dark), 33%)
     );
-    padding: 1.5rem;
+    padding: 3rem;
     border-radius: 8px;
   }
   .instructions code {
-    font-size: 0.8em;
+    font-size: 3em;
     font-weight: bold;
     background: rgba(var(--accent-light), 12%);
     color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
+    border-radius: 3px;
+    padding: 0.5em;
   }
   .instructions strong {
     color: rgb(var(--accent-light));
@@ -99,9 +113,16 @@ import Footer from "../components/Footer.astro";
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
-    padding: 0;
+    padding: 48px;
   }
-  h2 {
+  h1 {
     text-align: center;
+    color: rgb(86, 79, 171);
+    font-size: 80px;
+    margin-top: 100px;
+    line-height: 2em;
+  }
+  title {
+    font-size: larger;
   }
 </style>

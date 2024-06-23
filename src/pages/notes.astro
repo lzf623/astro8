@@ -5,30 +5,49 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="欢迎来到AStro">
+<Layout title="欢迎来到公考网站">
   <main>
-    <Navigation />
-    <h1>动画世界</h1>
-    <h2>每个小朋友的童年都需要守护</h2>
+    <div>
+      <Navigation />
+    </div>
+
+    <h1>各省份考公网址</h1>
+    <h2>毕业生不容错过的公考报名信息</h2>
     <p>
-      在这个页面，我将推荐豆瓣高分动画，提升孩子的审美，提供全球范围内的优秀动画，开阔孩子的视野。
+      在这个页面，我将推荐32个省市和直辖区的公考报名网站，事业单位招聘、公务员以及个别企业的招聘广告都在这上面啦！
     </p>
     <ul>
-      <li><a href="/md/1/"> 点击这里访问网站</a></li>
-      <li><a href="/md/2/">每个孩子必看的全球经典动画推荐</a></li>
+      <li><a href="/md/1/">各省份考公报名网址</a></li>
+      <li><a href="/md/2/">直辖市和自治区</a></li>
     </ul>
     <Footer />
   </main>
 </Layout>; ---
 
 <style>
+  div {
+    border: 3px rgb(219, 207, 132) solid;
+    width: 700px;
+    height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 1em;
+  }
+  body {
+    margin: 2em;
+    background-image: url("https://img0.baidu.com/it/u=545830803,3460127157&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=890");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: rgb(220, 228, 234);
+  }
   main {
     margin: auto;
-    padding: 1rem;
-    width: 800px;
+    padding: 10rem;
+    width: 900px;
     max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
+    color: rgb(180, 122, 99);
+    font-size: 36px;
     line-height: 1.6;
   }
   .astro-a {
@@ -36,33 +55,18 @@ import Footer from "../components/Footer.astro";
     top: -32px;
     left: 50%;
     transform: translatex(-50%);
-    width: 220px;
+    width: 230px;
     height: auto;
     z-index: -1;
   }
   h1 {
-    color: aliceblue;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 0.1;
     text-align: center;
-    margin-bottom: 1em;
-  }
-  h2 {
-    color: aliceblue;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  p {
-    color: rgb(250, 251, 252);
-    font-size: 1rem;
-    font-weight: 200;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: #834d3d;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
@@ -78,8 +82,8 @@ import Footer from "../components/Footer.astro";
       rgba(var(--accent-dark), 66%),
       rgba(var(--accent-dark), 33%)
     );
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 10px;
   }
   .instructions code {
     font-size: 0.8em;
@@ -96,14 +100,14 @@ import Footer from "../components/Footer.astro";
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
-    padding: 0;
+    padding: 2;
   }
-  ul {
-    color: rgb(250, 251, 252);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 3;
-    text-align: center;
-    margin-bottom: 2em;
+  li {
+    font-size: 39px;
+    color: #4b3c3c;
+  }
+  footer {
+    color: rgb(251, 248, 248);
+    text-align: left;
   }
 </style>
